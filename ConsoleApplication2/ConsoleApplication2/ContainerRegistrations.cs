@@ -17,8 +17,10 @@ namespace ConsoleApplication2
         }
         public static void LoadRegistrations()
         {
-            container.Register<ILogger, SimpleLogger>();
-            container.Register<IDatabase, MyDatabase>();
+            container.Register<ILogger, SimpleLogger>(Reuse.Transient);
+            container.Register<IDatabase>(
+                made: Made.Of(()=>new MyDatabase(Arg.Of<ILogger>()))
+                );
             
 
         }

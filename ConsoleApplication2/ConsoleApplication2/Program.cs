@@ -17,10 +17,9 @@ namespace ConsoleApplication2
             ILogger logger = ContainerRegistrations
                 .container.Resolve<ILogger>();
 
-            var getMyClass = ContainerRegistrations
-                .container.Resolve<Func<ILogger, IDatabase>>();
+            
 
-            IDatabase database = getMyClass(logger);
+            IDatabase database = ContainerRegistrations.container.Resolve<IDatabase>();
 
             database.Execute(query);
 
