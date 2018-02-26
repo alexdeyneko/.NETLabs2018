@@ -16,11 +16,8 @@ namespace ConsoleApplication2
 
             ILogger logger = ContainerRegistrations
                 .container.Resolve<ILogger>();
-
             
-
             IDatabase database = ContainerRegistrations.container.Resolve<IDatabase>();
-
             database.Execute(query);
 
         }

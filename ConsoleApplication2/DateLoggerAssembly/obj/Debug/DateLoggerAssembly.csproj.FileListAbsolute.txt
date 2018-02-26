@@ -1,0 +1,7 @@
+C:\Users\Алексей\Documents\GitHub\.NETLabs2018\ConsoleApplication2\DateLoggerAssembly\bin\Debug\DateLoggerAssembly.dll
+C:\Users\Алексей\Documents\GitHub\.NETLabs2018\ConsoleApplication2\DateLoggerAssembly\bin\Debug\DateLoggerAssembly.pdb
+C:\Users\Алексей\Documents\GitHub\.NETLabs2018\ConsoleApplication2\DateLoggerAssembly\bin\Debug\ConsoleApplication2.exe
+C:\Users\Алексей\Documents\GitHub\.NETLabs2018\ConsoleApplication2\DateLoggerAssembly\bin\Debug\ConsoleApplication2.pdb
+C:\Users\Алексей\Documents\GitHub\.NETLabs2018\ConsoleApplication2\DateLoggerAssembly\obj\Debug\DateLoggerAssembly.csprojResolveAssemblyReference.cache
+C:\Users\Алексей\Documents\GitHub\.NETLabs2018\ConsoleApplication2\DateLoggerAssembly\obj\Debug\DateLoggerAssembly.dll
+C:\Users\Алексей\Documents\GitHub\.NETLabs2018\ConsoleApplication2\DateLoggerAssembly\obj\Debug\DateLoggerAssembly.pdb

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication2
-{
+
     public interface ILogger
     {
         void Log(string message);
     }
-}
+
