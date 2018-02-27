@@ -16,11 +16,7 @@ namespace WebApplication1
     {
         protected void Application_Start()
         {
-            string assemblyName = "DateLoggerAssembly";
-            string path =
-                Directory.GetParent((Server.MapPath("~"))).Parent.FullName + @"\" + assemblyName + @"\bin\Debug\" + assemblyName + ".dll";
-
-            AssemblyCatalogLoader.LoadAssemblyCatalog(path);
+            AssemblyCatalogLoader.LoadAssemblyCatalogByName("DateLoggerAssembly");
 
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
@@ -32,9 +28,12 @@ namespace WebApplication1
     public static class AssemblyCatalogLoader
     {
         public static AssemblyCatalog Catalog { get; set; }
-        public static void LoadAssemblyCatalog(string path)
+        public static void LoadAssemblyCatalogByName(string assemblyName)
         {
-           
+            string path =
+                Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory)
+                .Parent.FullName + @"\" + assemblyName + @"\bin\Debug\" + assemblyName + ".dll";
+            
             Catalog = new AssemblyCatalog(Assembly.LoadFile(path));
         }
     }
