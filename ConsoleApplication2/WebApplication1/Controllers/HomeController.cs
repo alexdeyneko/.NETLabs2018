@@ -18,8 +18,7 @@ namespace WebApplication1.Controllers
 
         public HomeController()
         {
-            string assemblyPath = "C:\\Users\\Алексей\\Documents\\GitHub\\.NETLabs2018\\ConsoleApplication2\\DateLoggerAssembly\\bin\\Debug\\DateLoggerAssembly.dll";
-            var container = new CompositionContainer(new AssemblyCatalog(Assembly.LoadFile(assemblyPath)));
+            var container = new CompositionContainer(AssemblyCatalogLoader.Catalog);           
             container.ComposeParts(this);
 
         }

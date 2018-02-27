@@ -13,9 +13,10 @@ public class DateLogger : ILogger
 {
     public void Log(string message)
     {
-        string filePath = @"C:\Users\Алексей\Desktop\test.log";
+        
+        string filePath = Environment.ExpandEnvironmentVariables("%TEMP%\\test.log");
         File.AppendAllText(filePath,message);
-      
+        
     }
 }
 
