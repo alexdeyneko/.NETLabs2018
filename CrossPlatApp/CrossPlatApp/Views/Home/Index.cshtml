@@ -1,0 +1,24 @@
+﻿@{    
+    ViewData["Title"] = "Товары";
+}
+@model List<CrossPlatApp.Models.Item>
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>@ViewData["Title"]</h2>
+        <ul>
+        @{
+            foreach (var item in Model)
+            {
+                <li>
+                    @Html.ActionLink(item.Name, "Index", "Items",new {id = item.Id})
+                </li>
+            }
+        }
+        </ul>
+        
+    </div>
+    
+</div>

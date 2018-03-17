@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossPlatApp", "CrossPlatApp\CrossPlatApp.csproj", "{FF24FAD1-1C39-46F8-83B6-7031FD9A180A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF24FAD1-1C39-46F8-83B6-7031FD9A180A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF24FAD1-1C39-46F8-83B6-7031FD9A180A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF24FAD1-1C39-46F8-83B6-7031FD9A180A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF24FAD1-1C39-46F8-83B6-7031FD9A180A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

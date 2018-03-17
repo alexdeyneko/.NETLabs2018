@@ -1,0 +1,10 @@
+C:\Users\Алексей\RiderProjects\CrossPlatApp\CrossPlatApp\bin\Debug\netcoreapp2.0\CrossPlatApp.deps.json
+C:\Users\Алексей\RiderProjects\CrossPlatApp\CrossPlatApp\bin\Debug\netcoreapp2.0\CrossPlatApp.runtimeconfig.json
+C:\Users\Алексей\RiderProjects\CrossPlatApp\CrossPlatApp\bin\Debug\netcoreapp2.0\CrossPlatApp.runtimeconfig.dev.json
+C:\Users\Алексей\RiderProjects\CrossPlatApp\CrossPlatApp\bin\Debug\netcoreapp2.0\CrossPlatApp.dll
+C:\Users\Алексей\RiderProjects\CrossPlatApp\CrossPlatApp\bin\Debug\netcoreapp2.0\CrossPlatApp.pdb
+C:\Users\Алексей\RiderProjects\CrossPlatApp\CrossPlatApp\obj\Debug\netcoreapp2.0\CrossPlatApp.csproj.CoreCompileInputs.cache
+C:\Users\Алексей\RiderProjects\CrossPlatApp\CrossPlatApp\obj\Debug\netcoreapp2.0\CrossPlatApp.AssemblyInfoInputs.cache
+C:\Users\Алексей\RiderProjects\CrossPlatApp\CrossPlatApp\obj\Debug\netcoreapp2.0\CrossPlatApp.AssemblyInfo.cs
+C:\Users\Алексей\RiderProjects\CrossPlatApp\CrossPlatApp\obj\Debug\netcoreapp2.0\CrossPlatApp.dll
+C:\Users\Алексей\RiderProjects\CrossPlatApp\CrossPlatApp\obj\Debug\netcoreapp2.0\CrossPlatApp.pdb
