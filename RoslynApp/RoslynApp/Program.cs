@@ -15,17 +15,39 @@ namespace RoslynApp
                 Assembly.GetExecutingAssembly().FullName, "RoslynApp.Calculator");
             for (;;)
             {
+                Console.WriteLine("Expression (for example X+Y+Z):");
                 string expession = Console.ReadLine();
-                calculator.Calculate(expession);
+                Console.Write("X:");
+                string x = Console.ReadLine();
+                Console.Write("Y:");
+                string y = Console.ReadLine();
+                Console.Write("Z:");
+                string z = Console.ReadLine();
+
+                Calculator c = new Calculator(expession);
+                c.Calculate(new Variables {
+                    X = Convert.ToDouble(x),
+                    Y = Convert.ToDouble(y),
+                    Z = Convert.ToDouble(z)
+                });
             }
         }
     }
 
     class Calculator : System.MarshalByRefObject
     {
-        async public void Calculate(string expression)
+        string Expression;
+        public Calculator(string expression)
         {
-            var result =  await CSharpScript.EvaluateAsync(expression, ScriptOptions.Default.WithImports("System.Math"));
+            Expression = expression;
+        }
+        public Calculator()
+        {
+
+        }
+        async public void Calculate(Variables var)
+        {
+            var result = await CSharpScript.EvaluateAsync<double>(Expression, ScriptOptions.Default.WithImports("System.Math"), globals: var);
             WriteResult(result.ToString());
         }
         private void WriteResult(string result)
@@ -33,5 +55,14 @@ namespace RoslynApp
             Console.WriteLine(result);
         }
     }
-    
+
+    [Serializable]
+    public class Variables
+    {
+        public double X { get; set; }
+        public double Y { get; set; }
+        public double Z { get; set; }
+
+    }
+
 }
